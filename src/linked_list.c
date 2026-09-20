@@ -1,5 +1,6 @@
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 
 #include "linked_list.h"
@@ -8,7 +9,7 @@
  * Test helpers
  * ========================================================= */
 
- static void assert_list (Node *head, const int *expexted, size_t n) {
+ static void assert_list (Node *head, const int *expected, size_t n) {
     Node *current = head;
 
     for (size_t i = 0; i < n; i++) {
@@ -29,7 +30,7 @@
     }
 
     return head;
- })
+ }
 
  
 /* =========================================================
